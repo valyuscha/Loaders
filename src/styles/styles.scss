@@ -1,0 +1,8 @@
+@import "~normalize.css";
+@import "first-loader";
+@import "second-loader";
+@import "third-loader";
+
+body {
+  background: aqua;
+}

@@ -1,0 +1,45 @@
+.first-loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 20px 0 0 50px;
+  position: relative;
+  text-indent: -9999em;
+  animation-delay: -0.16s;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation-fill-mode: both;
+  animation: loader2 1.8s infinite ease-in-out;
+
+  &:before,
+  &:after {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation-fill-mode: both;
+    animation: loader2 1.8s infinite ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+
+  &:before {
+    left: -35px;
+    animation-delay: -0.32s;
+  }
+
+  &:after {
+    left: 35px;
+  }
+}
+
+@keyframes loader2 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 25px 0 -13px;
+  }
+  40% {
+    box-shadow: 0 25px 0 0;
+  }
+}
